@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Portfolio – Jonah Smith</title>
+    <title>Jonah Smith — Professional E-Portfolio</title>
 
     <style>
         body {
@@ -13,14 +13,12 @@
             color: #00ff66;
             line-height: 1.6;
         }
-
         header {
             background: #000000;
             border-bottom: 2px solid #00ff66;
             padding: 40px;
             text-align: center;
         }
-
         nav {
             background: #000000;
             border-bottom: 1px solid #00ff66;
@@ -29,30 +27,25 @@
             gap: 20px;
             justify-content: center;
         }
-
         nav a {
             color: #00ff66;
             text-decoration: none;
             font-weight: bold;
         }
-
         nav a:hover {
             text-decoration: underline;
         }
-
         .container {
             max-width: 900px;
             margin: 40px auto;
             padding: 0 20px;
         }
-
         h2 {
             margin-top: 40px;
             color: #00ff66;
             border-bottom: 1px solid #00ff66;
             padding-bottom: 5px;
         }
-
         .artifact {
             background: #000000;
             border: 1px solid #00ff66;
@@ -60,11 +53,6 @@
             border-radius: 8px;
             margin-bottom: 25px;
         }
-
-        .artifact h3 {
-            color: #00ff66;
-        }
-
         footer {
             text-align: center;
             padding: 20px;
@@ -72,9 +60,11 @@
             color: #00ff66;
             border-top: 1px solid #00ff66;
         }
-
         a {
             color: #00ff66;
+        }
+        iframe {
+            border: 1px solid #00ff66;
         }
     </style>
 </head>
@@ -97,57 +87,151 @@
 
 <div class="container">
 
+    <!-- INTRODUCTION -->
     <section id="intro">
         <h2>Introduction</h2>
-        <p>Welcome to my professional portfolio. This website highlights my work in professional communication, written projects, academic achievements, and my development as a writer and emerging professional.</p>
+        <p>
+            Welcome — my name is <strong>Jonah Smith</strong>, and I’m a senior at the University of Pittsburgh 
+            studying <strong>Computer Science</strong>, <strong>Data Science</strong>, 
+            and <strong>Applied Statistics</strong>. I’m passionate about using data, algorithms, 
+            and experimentation to solve real-world problems, especially in technology, financial markets, 
+            and digital intelligence.
+        </p>
+
+        <p>
+            My academic journey grew out of a challenge familiar to many students: balancing a demanding STEM 
+            curriculum while trying to build meaningful experience early in my career. Instead of treating 
+            coursework and personal projects as separate tracks, I merged them — turning class concepts into 
+            working models, research replications, and applied software tools. This approach helped me grow 
+            technically while strengthening my interest in quantitative work, machine learning, and financial modeling.
+        </p>
+
+        <p>
+            Professionally, I’ve built data systems and automation pipelines as a 
+            <strong>Software Developer and Data Analyst Intern at Federal Specialized Services</strong>, developing 
+            tools for large-scale data processing, legal/regulatory workflows, and internal reporting. 
+            These opportunities allowed me to apply my programming and analytical skills in real environments 
+            and reinforced my interest in building systems that help people make better decisions.
+        </p>
+
+        <p>
+            Looking ahead, I believe learning compounds — every project teaches something that opens the door 
+            to the next. Becoming skilled in any domain takes patience, curiosity, and deliberate practice, 
+            and that philosophy guides how I approach my academic, professional, and personal development. 
+            Through this portfolio, I share a snapshot of my work and the foundation I’m continuing to build 
+            as I work toward a career at the intersection of computing, analytics, and problem-solving.
+        </p>
     </section>
 
+    <!-- COVER LETTER -->
     <section id="letter">
-        <h2>Cover Letter</h2>
-        <p>(Your polished, generalized cover letter will go here.)</p>
+        <h2>General Professional Cover Letter</h2>
+
+        <p>
+            Dear Reader,
+        </p>
+
+        <p>
+            Thank you for taking the time to explore my professional portfolio. My name is Jonah Smith, and I am 
+            a senior at the University of Pittsburgh pursuing a double major in Computer Science and Data Science, 
+            with a minor in Applied Statistics. My academic work, personal projects, and professional experiences 
+            all stem from a simple motivation: I enjoy using data, computation, and experimentation to understand 
+            the world — and then improve it.
+        </p>
+
+        <p>
+            Throughout my undergraduate years, I’ve built a path defined by both discipline and curiosity. 
+            Balancing a demanding course load with research, software development, and personal passion projects 
+            has taught me how to adapt, prioritize, and build momentum under pressure. Instead of choosing 
+            between academic rigor and independent learning, I combined the two — transforming coursework 
+            concepts into personal experiments in markets, equities, synthetic data modeling, and long-term 
+            machine-learning research replication projects.
+        </p>
+
+        <p>
+            Professionally, I’ve applied these skills as a Software Developer and Data Analyst Intern at 
+            Federal Specialized Services, where I built and deployed tools that supported regulatory work, 
+            automated complex data pipelines, and assisted attorneys by developing conditional data extraction 
+            systems. These experiences strengthened my foundation in Python, SQL, data engineering, and analytical 
+            reasoning while reinforcing my passion for designing tools that streamline decision-making.
+        </p>
+
+        <p>
+            Outside the classroom, I maintain strong personal interests in financial markets, quantitative investing, 
+            and strength training. Lifting has taught me consistency, patience, and progressive improvement — values 
+            that directly influence how I approach coding, research, and long-term project development.
+        </p>
+
+        <p>
+            As I continue advancing into the professional world, I aim to build on these experiences — leveraging 
+            my statistical background, computational skills, and appetite for learning to contribute to data-driven 
+            teams and impactful technology. I am committed to continuous growth, and I look forward to building 
+            meaningful work in the years ahead.
+        </p>
+
+        <p>
+            Sincerely,<br>
+            <strong>Jonah Smith</strong>
+        </p>
     </section>
 
+    <!-- RESUME -->
     <section id="resume">
         <h2>Resume</h2>
-        <p><a href="resume.pdf" target="_blank">Download Resume (PDF)</a></p>
+        <p>You can view my resume directly below or open it in a new tab.</p>
+
+        <p>
+            <a href="RESUME_DUOLINGOjs.pdf" target="_blank">
+                Open Resume in New Tab (PDF)
+            </a>
+        </p>
+
+        <iframe 
+            src="RESUME_DUOLINGOjs.pdf" 
+            style="width:100%; height:900px;">
+        </iframe>
     </section>
 
+    <!-- GOALS -->
     <section id="goals">
         <h2>Goals, Achievements, Awards & Community Service</h2>
-        <p>(Insert your accomplishments here.)</p>
+        <p>(Add your achievements here — I can write this section too if you'd like.)</p>
     </section>
 
+    <!-- PHILOSOPHY -->
     <section id="philosophy">
-        <h2>Professional Philosophy Statement</h2>
-        <p>(Your revised professional philosophy goes here.)</p>
+        <h2>Professional Philosophy</h2>
+        <p>(Paste your revised philosophy statement here.)</p>
     </section>
 
+    <!-- BIBLIOGRAPHY -->
     <section id="bibliography">
         <h2>Professional Bibliography</h2>
         <p><a href="bibliography.pdf" target="_blank">Download Bibliography (PDF)</a></p>
     </section>
 
+    <!-- ARTIFACTS -->
     <section id="artifacts">
         <h2>Selected Artifacts</h2>
 
         <div class="artifact">
-            <h3>Artifact 1 – Title</h3>
-            <p>Description of what this artifact is and why it matters.</p>
+            <h3>Artifact 1</h3>
+            <p>Description goes here.</p>
         </div>
 
         <div class="artifact">
-            <h3>Artifact 2 – Title</h3>
-            <p>Description of what this artifact is and why it matters.</p>
+            <h3>Artifact 2</h3>
+            <p>Description goes here.</p>
         </div>
 
         <div class="artifact">
-            <h3>Artifact 3 – Title</h3>
-            <p>Description of what this artifact is and why it matters.</p>
+            <h3>Artifact 3</h3>
+            <p>Description goes here.</p>
         </div>
 
         <div class="artifact">
-            <h3>Artifact 4 – Title</h3>
-            <p>Description of what this artifact is and why it matters.</p>
+            <h3>Artifact 4</h3>
+            <p>Description goes here.</p>
         </div>
 
     </section>
