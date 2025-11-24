@@ -1,9 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Artifacts — Jonah Smith</title>
 
 <style>
@@ -11,12 +10,12 @@
         font-family: "Courier New", monospace;
         margin: 0;
         background: #ffffff;
-        color: #1e1e1e;
+        color: #1b1b1b;
         line-height: 1.6;
     }
     header {
         text-align: center;
-        padding: 40px;
+        padding: 40px 20px;
         border-bottom: 2px solid #007acc;
     }
     nav {
@@ -24,7 +23,7 @@
         justify-content: center;
         gap: 25px;
         padding: 15px;
-        border-bottom: 1px solid #d0d7de;
+        border-bottom: 1px solid #e0e0e0;
     }
     nav a {
         color: #007acc;
@@ -41,18 +40,42 @@
     }
     h2 {
         color: #007acc;
-        border-bottom: 1px solid #d0d7de;
-        padding-bottom: 5px;
+        border-bottom: 1px solid #e0e0e0;
+        padding-bottom: 6px;
     }
     .artifact {
-        background: #f6f8fa;
+        background: #f9f9f9;
         border: 1px solid #d0d7de;
-        padding: 20px;
         border-radius: 6px;
-        margin-bottom: 20px;
+        padding: 20px;
+        margin-bottom: 35px;
     }
     .artifact h3 {
         color: #007acc;
+        margin-top: 0;
+    }
+    .buttons {
+        margin: 15px 0;
+        display: flex;
+        gap: 10px;
+    }
+    .btn {
+        background: #007acc;
+        color: #fff;
+        padding: 8px 16px;
+        border-radius: 4px;
+        text-decoration: none;
+        font-size: 14px;
+    }
+    .btn:hover {
+        background: #005fa3;
+    }
+    .pdf-viewer {
+        width: 100%;
+        height: 600px;
+        border: 1px solid #ccc;
+        margin-top: 20px;
+        border-radius: 6px;
     }
 </style>
 </head>
@@ -77,88 +100,61 @@
 
     <h2>Portfolio Artifacts</h2>
 
+    <!-- Artifact 1 -->
     <div class="artifact">
-        <h3>Concept Extraction Pipeline (Capstone Project)</h3>
+        <h3>Concept Extraction Pipeline (CS 1980 Capstone)</h3>
         <p>
-            A multi-stage NLP pipeline built to extract and classify conceptual content from over 
-            4,000 educational slides. Includes LLM prompting, rule-based filtering, dataset 
-            normalization, and F1 evaluation frameworks.
+            A full multi-stage NLP pipeline designed to extract instructional concepts from university 
+            lecture slides using rule-based annotation, LLM prompting, and statistical performance 
+            evaluation across seven courses. Includes codebook-driven extraction, filtering logic,
+            multimodal experimentation, and stepwise regression analysis of F1 predictors.
         </p>
+
+        <div class="buttons">
+            <a class="btn" href="https://github.com/ofinucan7/CS-1980-Concept-Extraction" target="_blank">
+                View Repository
+            </a>
+            <a class="btn" href="/mnt/data/Concept_Extraction_with_LLMs.pdf" target="_blank">
+                View Paper (PDF)
+            </a>
+        </div>
+
+        <iframe class="pdf-viewer" src="/mnt/data/Concept_Extraction_with_LLMs.pdf"></iframe>
     </div>
 
+    <!-- Artifact 2 -->
     <div class="artifact">
-        <h3>LLM Compression & Bias Replication Study</h3>
+        <h3>LLM Compression & Bias Study (Replication Project)</h3>
         <p>
-            A replication and extension of a published study analyzing quantization and knowledge 
-            distillation effects on bias in BERT-family models. Includes experimental design, 
-            regression analysis, and structured bias evaluation.
+            A replication and statistical extension of Gonçalves & Strubell (2023), investigating how 
+            quantization and knowledge distillation affect bias in BERT-family models. Includes 
+            inferential testing via OLS, t-tests, and bootstrap intervals.  
+            <strong>Status:</strong> Full analysis section to be completed soon.
         </p>
+
+        <div class="buttons">
+            <a class="btn" href="/mnt/data/cs1684midtermPaper.pdf" target="_blank">
+                View Current Draft (PDF)
+            </a>
+        </div>
+
+        <iframe class="pdf-viewer" src="/mnt/data/cs1684midtermPaper.pdf"></iframe>
     </div>
 
+    <!-- Artifact 3 -->
     <div class="artifact">
-        <h3>Synthetic Fractal Cascade Model for Market Volatility</h3>
+        <h3>PPG Paints Supervised Learning Project</h3>
         <p>
-            A Python engine generating synthetic price series based on fractal cascades to replicate 
-            heavy-tailed returns and volatility clustering for robust time-series experimentation.
+            Machine learning pipeline evaluating color data using regression, neural networks, 
+            regularization techniques, ROC analysis, and hyperparameter tuning. Completed for 
+            STAT 1675 / PPG Industry Collaboration.
         </p>
-    </div>
 
-    <div class="artifact">
-        <h3>Quantitative Trading Strategy Simulations</h3>
-        <p>
-            A collection of models exploring momentum percentiles, return deviation thresholds, 
-            conditional probability signals, and power-law regression divergences to build 
-            evidence-based trading strategies.
-        </p>
-    </div>
-
-    <div class="artifact">
-        <h3>Machine Learning Regression & Classification Project (PPG)</h3>
-        <p>
-            A supervised learning pipeline evaluating paint color data using neural networks, 
-            logistic regression, regularized models, and boosting techniques.
-        </p>
-    </div>
-
-    <div class="artifact">
-        <h3>Random Walk Independence Tester (Bitcoin)</h3>
-        <p>
-            Statistical tools evaluating whether daily crypto returns exhibit dependency structure, 
-            with bootstrap simulations and probabilistic modeling.
-        </p>
-    </div>
-
-    <div class="artifact">
-        <h3>Internal Automation Tools (Federal Specialized Services)</h3>
-        <p>
-            Confidential-but-describable internal tools designed for legal data extraction, 
-            workflow automation, and large-scale data processing in Python and SQL.
-        </p>
-    </div>
-
-    <div class="artifact">
-        <h3>AI-Assisted Market Modeling Pipeline</h3>
-        <p>
-            An experimental ML/LLM-based meta-modeling project exploring embeddings, heuristics, 
-            and Monte Carlo contrast testing to evaluate whether large models capture real 
-            financial structure.
-        </p>
-    </div>
-
-    <div class="artifact">
-        <h3>Professional Writing Portfolio</h3>
-        <p>
-            A collection of memos, reports, and professional communication exercises demonstrating 
-            audience awareness, clarity, revision, and structured reasoning.
-        </p>
-    </div>
-
-    <div class="artifact">
-        <h3>Strength Training Data Log</h3>
-        <p>
-            Long-term personal tracking of weightlifting progress, demonstrating discipline, 
-            pattern recognition, and consistent improvement.
-        </p>
+        <div class="buttons">
+            <a class="btn" href="https://github.com/JS12371/FINAL1675/blob/main/FinalP1.Rmd" target="_blank">
+                View Project (GitHub)
+            </a>
+        </div>
     </div>
 
 </div>
