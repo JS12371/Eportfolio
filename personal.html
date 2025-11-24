@@ -48,27 +48,38 @@
         color: #007acc;
         border-bottom: 1px solid #d0d7de;
         padding-bottom: 6px;
+        margin-bottom: 20px;
     }
 
     .section {
-        margin-bottom: 50px;
+        margin-bottom: 60px;
     }
 
-    .photo-box {
-        margin: 25px 0;
-        text-align: center;
+    /* Masonry Grid */
+    .grid {
+        column-count: 2;
+        column-gap: 18px;
     }
 
-    .photo-box img {
-        max-width: 100%;
+    @media (min-width: 900px) {
+        .grid {
+            column-count: 3;
+        }
+    }
+
+    .grid img {
+        width: 100%;
+        margin-bottom: 12px;
         border-radius: 8px;
         border: 1px solid #d0d7de;
-        margin-bottom: 10px;
+        display: block;
     }
 
     .caption {
         color: #555;
         font-size: 14px;
+        margin-bottom: 20px;
+        text-align: center;
     }
 </style>
 </head>
@@ -84,26 +95,27 @@
     <a href="index.html">Introduction</a>
     <a href="cover-letter.html">Cover Letter</a>
     <a href="resume.html">Resume</a>
-    <a href="goals.html">Goals</a>
+    <a href="goals.html">Goals & Achievements</a>
     <a href="philosophy.html">Philosophy</a>
     <a href="bibliography.html">Bibliography</a>
-    <a href="artifacts.html">Projects</a>
+    <a href="artifacts.html">Artifacts</a>
     <a href="personal.html">Personal</a>
 </nav>
 
 <div class="container">
 
-    <!-- Lifting Section -->
+    <!-- Strength Training Section -->
     <div class="section">
         <h2>Strength Training & Lifting</h2>
         <p>
-            Training has been one of the most consistent parts of my life for years. I enjoy the discipline,
-            structure, and steady progression that comes with powerlifting. It keeps me grounded outside
-            of school and projects, and it's something I take a lot of pride in.
+            Lifting has been one of the most grounding parts of my life. I enjoy the discipline,
+            long-term progression, and personal challenge that comes with strength training.
         </p>
 
-        <div class="photo-box">
+        <div class="grid">
             <img src="lifting.png" alt="Deadlift">
+            <img src="squat.png" alt="Squat Photo">
+            <img src="PLmeet.png" alt="Powerlifting Meet">
         </div>
     </div>
 
@@ -111,31 +123,19 @@
     <div class="section">
         <h2>Music</h2>
         <p>
-            Music has been another major part of my life — from playing metal shows with friends, to
-            performing acoustic sets around Pittsburgh, to writing my own material. It gives me a creative
-            outlet and a way to connect with people in a completely different environment than school or work.
+            Music has always been a major part of my life — from metal shows with friends to acoustic sets
+            around Pittsburgh. Performing, writing, and collaborating with others gives me a creative outlet
+            completely different from school or work.
         </p>
 
-        <div class="photo-box">
+        <div class="grid">
             <img src="preserving.png" alt="Concert Photo">
-        </div>
-
-        <div class="photo-box">
-            <img src="Jonah_music.jpg" alt="Band Performance">
-            <div class="caption">Playing a metal set with my band.</div>
-        </div>
-
-        <div class="photo-box">
+            <img src="Jonah_music.jpg" alt="Metal Band Performance">
+            <img src="MF.png" alt="Full Band Rehearsal">
             <img src="IMG_2974.JPG" alt="Acoustic Performance">
-            <div class="caption">Playing an acoustic show — one of my favorite kinds of gigs.</div>
-        </div>
-
-        <div class="photo-box">
             <img src="IMG_4206.JPG" alt="Guitar at Home">
-            <div class="caption">Playing at home, late-night practice.</div>
         </div>
     </div>
-
 
 </div>
 
